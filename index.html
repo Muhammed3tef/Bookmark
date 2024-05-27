@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-------------------------firs font--------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!------------------------------second font------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<!------------------third font----------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <!---------------------------viewport----------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------------favicon------------------------------->
+    <link rel="shortcut icon" href="img/bookmarg img.png" type="image/x-icon">
+    <!----------------------links------------------------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="inner-item my-5 col-md-12">
+                <div class="item">
+                    <!-------------------------main---------------------------------->
+                    <h1 class="master-head position-relative ">Bookmarker</h1>
+                    <div class="border-item border border-top-0 border-start-0 border-end-0 border-dark mt-5 "></div>
+                    <h2 class="second-head mt-4 h4 text-center"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                    <h3 class="h5 site-style mt-5 fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name </h3>
+                    <input oninput="vaildInputs(this)" type="text" class="form-control" name="userText" id="inputName" placeholder="Bookmark Name">
+                    <h3 class="h5 site-style mt-4 fw-bold"><i class="fa-solid fa-link pe-2"></i> Site URL </h3>
+                    <input oninput="vaildInputs(this)" type="url" class="form-control" name="userURL" id="inputURL" placeholder="Website URL">
+                    <div class="d-flex justify-content-center align-items-center mt-4">
+                        <button onclick="addData()" class="btn btn-warning px-5 fw-semibold ">Submit</button>
+                    </div>
+                    <div class="border-item border border-top-0 border-start-0 border-end-0 border-dark mt-5 "></div>
+                    <table class="bg-white mt-3 w-100 text-center mt-4">
+                        <thead>
+                            <tr class="border border-start-0 border-end-0 border-top-0 ">
+                                <th class="p-3">Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th> 
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyData">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

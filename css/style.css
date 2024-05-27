@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #fec160;
+}
+body {
+  margin: 0;
+  background-color: #f7ecde;
+}
+.master-head {
+  font-family: "Pacifico", cursive;
+  font-size: 48;
+  width: fit-content;
+  margin: auto;
+}
+.master-head:hover::before {
+  top: 35%;
+}
+.master-head::before {
+  content: "";
+  background-color: #fec160;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+.container .row .inner-item .item .border-item {
+  border-style: dotted !important;
+  border-bottom-width: 2px !important;
+  margin-top: 65px !important;
+}
+.container .row .inner-item .item .second-head {
+  background-image: linear-gradient(to right, #3fa55b, #b0ab49);
+  background-clip: text;
+  color: transparent;
+  font-family: "Righteous", sans-serif;
+
+}
+.container .row .inner-item .item h3.site-style {
+  font-size: 15px;
+}
+.form-control:focus {
+  border-color: #e2af5f;
+  box-shadow: 0 0 3px 2px #e2af5f;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+table{
+  font-family: "PT Sans Caption", sans-serif;
+}
