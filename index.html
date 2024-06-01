@@ -24,9 +24,12 @@
       rel="stylesheet"
     />
     <!----------------------------last font----------------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
 
     <!---------------------------viewport----------------------------->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,29 +99,40 @@
               </thead>
               <tbody id="tbodyData"></tbody>
             </table>
-            <div id="lnyar" class="lnyar d-none position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center" >
+            <div
+              id="lnyar"
+              class="lnyar d-none position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center"
+            >
               <div class="lnyar-content bg-white">
                 <div class="content-head fs-5 p-2">
-                    <div class="mark-arrow d-flex justify-content-end align-items-center pe-3">
-                        <i id="xMark" class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="content-headd p-2">
-                        Site Name or Url is not valid, Please follow the rules below :
-                    </div>
-                  <div class="site-name d-flex justify-content-center align-items-center">
+                  <div class="mark-arrow d-flex justify-content-center  align-items-center pe-3" >
+                    <span class="rounded-circle bg-danger p-2"></span>
+                    <span class="rounded-circle bg-warning p-2 m-1"></span>
+                    <span class="rounded-circle bg-info p-2"></span>
+                    <i id="xMark" class="fa-solid fa-xmark d-block ms-auto"></i>
+                  </div>
+                  <div class="content-headd p-2">
+                    Site Name or Url is not valid, Please follow the rules below
+                    :
+                  </div>
+                  <div
+                    class="site-name d-flex justify-content-center align-items-center"
+                  >
                     <div class="font-arow pe-2 text-danger my-4 fs-6">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
+                      <i class="fa-solid fa-circle-arrow-right"></i>
                     </div>
                     <div class="font-cont fw-normal">
-                        Site name must contain at least 3 characters
+                      Site name must contain at least 3 characters
                     </div>
                   </div>
-                  <div class="site-name d-flex justify-content-start ms-3 align-items-center">
+                  <div
+                    class="site-name d-flex justify-content-start ms-3 align-items-center"
+                  >
                     <div class="font-arow pe-2 text-danger my-4 fs-6">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
+                      <i class="fa-solid fa-circle-arrow-right"></i>
                     </div>
                     <div class="font-cont fw-normal">
-                        Site URL must be a valid one
+                      Site URL must be a valid one
                     </div>
                   </div>
                 </div>
