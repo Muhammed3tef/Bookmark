@@ -56,3 +56,18 @@ a{
 table{
   font-family: "PT Sans Caption", sans-serif;
 }
+.container .row .inner-item .item .lnyar{
+  background-color:rgba(132, 126, 118, 0.417) ;
+}
+.container .row .inner-item .item .lnyar .lnyar-content{
+  width: 30%;
+  height: 35%;
+  border-radius: 5%;
+}
+.container .row .inner-item .item .lnyar .content-headd{
+  font-family: "Bree Serif", serif;
+
+}
+.container .row .inner-item .item .lnyar .content-head .mark-arrow i{
+  cursor: pointer;
+}
