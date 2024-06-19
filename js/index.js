@@ -22,6 +22,8 @@ function addData() {
       };
       bookmarkData.push(databook);
       localStorage.setItem("userName", JSON.stringify(bookmarkData));
+      inputName.classList.remove("is-valid")
+      inputURL.classList.remove("is-valid")
       readData();
       clearData();
   } else {

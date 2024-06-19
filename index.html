@@ -36,10 +36,39 @@
     <!------------------------------favicon------------------------------->
     <link rel="shortcut icon" href="img/bookmarg img.png" type="image/x-icon" />
     <!----------------------links------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css"
+    />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Bookmark</title>
+    <!---------------------------------jquery------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!---------------------------datatables css--------------------------->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"
+    />
+    <!-----------------datatables js----------------------------->
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
+    ></script>
+    <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<!-- DataTables Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
+<!-- DataTables Bootstrap JS -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+
   </head>
   <body>
     <div class="container">
@@ -88,13 +117,17 @@
             <div
               class="border-item border border-top-0 border-start-0 border-end-0 border-dark mt-5"
             ></div>
-            <table class="bg-white mt-3 w-100 text-center mt-4">
+            <table
+              class="bg-white w-100 text-center  mt-5 display"
+              id="example"
+              style="width: 100%"
+            >
               <thead>
                 <tr class="border border-start-0 border-end-0 border-top-0">
-                  <th class="p-3">Index</th>
-                  <th>Website Name</th>
-                  <th>Visit</th>
-                  <th>Delete</th>
+                  <th class="p-3 text-center">Index</th>
+                  <th class="text-center">Website Name</th>
+                  <th class="text-center">Visit</th>
+                  <th class="text-center">Delete</th>
                 </tr>
               </thead>
               <tbody id="tbodyData"></tbody>
@@ -105,7 +138,9 @@
             >
               <div class="lnyar-content bg-white">
                 <div class="content-head fs-5 p-2">
-                  <div class="mark-arrow d-flex justify-content-center  align-items-center pe-3" >
+                  <div
+                    class="mark-arrow d-flex justify-content-center align-items-center pe-3"
+                  >
                     <span class="rounded-circle bg-danger p-2"></span>
                     <span class="rounded-circle bg-warning p-2 m-1"></span>
                     <span class="rounded-circle bg-info p-2"></span>
@@ -142,6 +177,11 @@
         </div>
       </div>
     </div>
+    <script>
+$(document).ready(function() {
+    $('#example').DataTable();
+});
+    </script>
     <script src="js/index.js"></script>
   </body>
 </html>
