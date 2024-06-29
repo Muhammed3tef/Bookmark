@@ -2,6 +2,8 @@ var inputName = document.getElementById("inputName");
 var inputURL = document.getElementById("inputURL");
 var lnyar = document.getElementById("lnyar");
 var xmark=document.getElementById("xMark")
+var alertMessage = document.getElementById("alertMessage")
+var alertUrl = document.getElementById("alertUrl")
 var bookmarkData = [];
 if (localStorage.userName != null) {
   bookmarkData = JSON.parse(localStorage.getItem("userName"));
@@ -61,14 +63,17 @@ function deleteData(index) {
 //valid
 function vaildInputs(element) {
   var regex = {
-    inputName: /^[a-zA-z]{3,}$/i,
+    inputName: /^[a-zA-z]{5,}$/i,
     inputURL: /https:\/\//,
   };
   if (regex[element.id].test(element.value)) {
     element.classList.add("is-valid");
     element.classList.remove("is-invalid");
-  } else {
+    element.nextElementSibling.classList.replace("d-block","d-none")
+  }
+   else {
     element.classList.add("is-invalid");
     element.classList.remove("is-valid");
+    element.nextElementSibling.classList.replace("d-none","d-block")
   }
 }

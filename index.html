@@ -95,6 +95,7 @@
               id="inputName"
               placeholder="Bookmark Name"
             />
+            <div class="alert alert-danger mt-2 p-2 ps-2 d-none" id="alertMessage">You must enter at least 3 letters and you can't leave distances</div>
             <h3 class="h5 site-style mt-4 fw-bold">
               <i class="fa-solid fa-link pe-2"></i> Site URL
             </h3>
@@ -106,6 +107,8 @@
               id="inputURL"
               placeholder="Website URL"
             />
+            <div class="alert alert-danger mt-2 p-2 ps-2 d-none" id="alertUrl">You must start with https://</div>
+
             <div class="d-flex justify-content-center align-items-center mt-4">
               <button
                 onclick="addData()"
